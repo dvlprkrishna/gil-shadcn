@@ -13,9 +13,8 @@ const Home = () => {
       <Container className="header-container mt-8" tag="header">
         <DesktopNavbar />
       </Container>
-
-      <Container className=" flex-col px-10 mt-20" tag="main">
-        <HeroIntro />
+      <HeroIntro />
+      <Container className=" mt-[100vh] flex-col px-10 " tag="main">
         <Subscribe />
       </Container>
       <Footer />
