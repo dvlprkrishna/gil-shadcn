@@ -5,6 +5,7 @@ import React from "react";
 import HeroIntro from "@/components/HeroIntro";
 import Footer from "@/components/Footer";
 import Subscribe from "@/components/Subscribe";
+import ClientLogos from "@/components/ClientLogos";
 
 const Home = () => {
   return (
@@ -14,7 +15,8 @@ const Home = () => {
         <DesktopNavbar />
       </Container>
       <HeroIntro />
-      <Container className=" mt-[100vh] flex-col px-10 " tag="main">
+      <ClientLogos />
+      <Container className=" mt-8 flex-col px-10 " tag="main">
         <Subscribe />
       </Container>
       <Footer />

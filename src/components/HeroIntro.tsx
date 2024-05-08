@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React from "react";
 
 const HeroIntro = () => {
   return (
     <div className="relative">
       <video
-        className="w-full h-full object-cover"
+        className="w-full h-[100vh] object-cover"
         autoPlay
         loop
         muted
@@ -15,7 +16,7 @@ const HeroIntro = () => {
           type="video/mp4"
         />
       </video>
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
         <h1 className="text-white text-center sm:text-8xl leading-none select-none tracking-tightest font-semibold">
           <span
             data-content="Automation."
@@ -45,6 +46,23 @@ const HeroIntro = () => {
             </span>
           </span>
         </h1>
+
+        <div className="flex flex-col text-center gap-y-10 justify-center items-center">
+          <p className="mt-4 mx-auto text-[20px] leading-6 font-[500] max-w-[80%] text-center text-gray-500 dark:text-gray-400">
+            Revolutionize your business operations, save time and boost
+            productivity with our cutting-edge offerings.
+          </p>
+
+          <Link
+            className="group w-fit relative inline-flex rounded-full items-center overflow-hidden bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+            href="#"
+          >
+            <span className="text-sm font-medium transition-all">
+              {" "}
+              Let&apos;s Connect and Transform
+            </span>
+          </Link>
+        </div>
       </div>
     </div>
   );

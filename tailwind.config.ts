@@ -33,6 +33,10 @@ const config = {
         "gradient-3-end": "#F9CB28",
       },
       keyframes: {
+        "slide-left": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -97,6 +101,7 @@ const config = {
         },
       },
       animation: {
+        "slide-left-infinite": "slide-left 15s linear infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "gradient-background-1": "gradient-background-1 8s infinite",
