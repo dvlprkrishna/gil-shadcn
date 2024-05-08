@@ -14,12 +14,11 @@ const Home = () => {
         <DesktopNavbar />
       </Container>
 
-      <Container className="main-container mt-20" tag="main">
+      <Container className=" flex-col px-10 mt-20" tag="main">
+        <HeroIntro />
         <Subscribe />
       </Container>
-      <Container className="footer-container pt-4" tag="footer">
-        <Footer />
-      </Container>
+      <Footer />
     </>
   );
 };

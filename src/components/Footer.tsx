@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-white container dark:bg-gray-900">
+    <footer className="container">
       <div className="mx-auto space-y-8  py-16  lg:space-y-16 ">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           <div>
@@ -30,8 +30,8 @@ const Footer = () => {
             </div>
 
             <p className="mt-4 max-w-xs text-gray-500 dark:text-gray-400">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
-              cupiditate quae nam molestias.
+              Revolutionize your business operations, save time and boost
+              productivity with our cutting-edge offerings.
             </p>
 
             <ul className="mt-8 flex gap-6">
@@ -40,7 +40,7 @@ const Footer = () => {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                 >
                   <span className="sr-only">Facebook</span>
 
@@ -64,7 +64,7 @@ const Footer = () => {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                 >
                   <span className="sr-only">Instagram</span>
 
@@ -88,7 +88,7 @@ const Footer = () => {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                 >
                   <span className="sr-only">Twitter</span>
 
@@ -108,7 +108,7 @@ const Footer = () => {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                 >
                   <span className="sr-only">GitHub</span>
 
@@ -132,7 +132,7 @@ const Footer = () => {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                 >
                   <span className="sr-only">Dribbble</span>
 
@@ -154,123 +154,248 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
             <div>
-              <p className="font-medium text-gray-900 dark:text-white">
+              <p className="font-medium text-base leading-[24px] text-gray-900 dark:text-white">
+                Solutions
+              </p>
+
+              <ul className="mt-4">
+                <li className="mb-3">
+                  <p className="font-medium text-base leading-[24px] text-gray-900 dark:text-[#eef4ff]">
+                    Automation
+                  </p>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Enterprise Suite
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Technology Stack
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Products
+                  </Link>
+                </li>
+              </ul>
+              <ul className="my-4 ">
+                <li className="mb-3">
+                  <p className="font-medium text-base leading-[24px] text-gray-900 dark:text-[#eef4ff]">
+                    Cloudification
+                  </p>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Upgrade to cloud
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Cloud Stack
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Cloud Services
+                  </Link>
+                </li>
+              </ul>
+              <ul className="my-4 ">
+                <li className="mb-3">
+                  <p className="font-medium text-base leading-[24px] text-gray-900 dark:text-[#eef4ff]">
+                    Transformation
+                  </p>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Intelligent Technologies
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Customer Experience
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Data Insights
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-medium text-base leading-[24px] text-gray-900 dark:text-white">
                 Services
               </p>
 
-              <ul className="mt-6 space-y-4 text-sm">
+              <ul className="my-6 ">
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                   >
-                    1on1 Coaching
+                    Business Processes
                   </Link>
                 </li>
 
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                   >
-                    Company Review
+                    Consulting
                   </Link>
                 </li>
 
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                   >
-                    Accounts Review
+                    Implementation & Global
                   </Link>
                 </li>
 
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                   >
-                    HR Consulting
+                    Managed Services
                   </Link>
                 </li>
 
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                   >
-                    SEO Optimisation
+                    Data & Information Security
+                  </Link>
+                </li>
+              </ul>
+              <p className="font-medium text-base leading-[24px] text-gray-900 dark:text-white">
+                Industry Focus
+              </p>
+
+              <ul className="my-4 ">
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Manufacturing
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Retail
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Trading & Distribution
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Projects
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
+                  >
+                    Professional Services
                   </Link>
                 </li>
               </ul>
             </div>
-
             <div>
-              <p className="font-medium text-gray-900 dark:text-white">
+              <p className="font-medium text-base leading-[24px] text-gray-900 dark:text-white">
                 Company
               </p>
 
-              <ul className="mt-6 space-y-4 text-sm">
+              <ul className="my-4 ">
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                   >
-                    About
+                    About us
                   </Link>
                 </li>
 
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                   >
-                    Meet the Team
+                    Infotech Weekly
                   </Link>
                 </li>
 
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                   >
-                    Accounts Review
+                    Career
                   </Link>
                 </li>
-              </ul>
-            </div>
-
-            <div>
-              <p className="font-medium text-gray-900 dark:text-white">
-                Helpful Links
-              </p>
-
-              <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-[#b2d2ff]"
                   >
-                    Contact
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    FAQs
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    Live Chat
+                    Contact us
                   </Link>
                 </li>
               </ul>
