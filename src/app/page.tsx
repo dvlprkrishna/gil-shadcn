@@ -17,13 +17,14 @@ const Home = () => {
       </Container>
       <HeroIntro />
       <ClientLogos />
+      <OfferingsSlider />
+
       <Container className=" mt-8 flex-col px-10 " tag="main">
         {/* Robot */}
         {/* ACT Cards */}
         {/* Expertise Globe */}
         {/* Our Offerings Cards */}
         {/* Results that Matters Cards */}
-        <OfferingsSlider />
         <Subscribe />
       </Container>
       <Footer />

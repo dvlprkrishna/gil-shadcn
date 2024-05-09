@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 const OfferingsSlider = () => {
   return (
-    <div className=" ">
+    <div className=" bg-[#DCE9FF] ">
       {/* <div className="flex h-48 items-center justify-center">
         <span className="font-semibold uppercase text-neutral-500">
           Scroll down
@@ -29,7 +29,10 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh]  ">
+    <section
+      ref={targetRef}
+      className="container relative h-[300vh] bg-[#DCE9FF] "
+    >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
@@ -69,7 +72,7 @@ const Card = ({ card }: { card: CardType }) => {
     <div
       key={card.id}
       //   className={`group relative rounded-2xl me-8 h-[450px] w-[450px] overflow-hidden ${randomColorClass}`}
-      className={`group relative rounded-2xl me-8 h-[450px] w-[450px] overflow-hidden ${randomColorClass}`}
+      className={`group relative  rounded-2xl me-8 h-[450px] w-[450px] overflow-hidden ${randomColorClass}`}
     >
       <div
         style={{
@@ -82,7 +85,7 @@ const Card = ({ card }: { card: CardType }) => {
       <div className="absolute inset-0 z-10 grid place-content-start">
         {/* <p className="bg-gradient-to-br from-white/20 to-white/0 px-8 py-4 tracking-wide font-semibold rounded-full capitalize text-base leading-6 text-white backdrop-blur-lg m-8"> */}
         <p
-          className={`px-8 py-4 tracking-wide font-semibold rounded-full capitalize text-base leading-6 backdrop-blur-lg m-8 ${fontColorClass}`}
+          className={`px-8 py-4 tracking-wide font-semibold rounded-full capitalize text-base leading-6 backdrop-blur-lg m-8 ${randomColorClass} ${fontColorClass}`}
         >
           {card.title}
         </p>
