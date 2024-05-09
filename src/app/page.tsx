@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Subscribe from "@/components/Subscribe";
 import ClientLogos from "@/components/ClientLogos";
 import OfferingsSlider from "@/components/OfferingsSlider";
+import HubExpertise from "@/components/HubExpertise";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       </Container>
       <HeroIntro />
       <ClientLogos />
+      <HubExpertise />
       <OfferingsSlider />
 
       <Container className=" mt-8 flex-col px-10 " tag="main">
