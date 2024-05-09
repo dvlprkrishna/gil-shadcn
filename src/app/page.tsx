@@ -6,6 +6,7 @@ import HeroIntro from "@/components/HeroIntro";
 import Footer from "@/components/Footer";
 import Subscribe from "@/components/Subscribe";
 import ClientLogos from "@/components/ClientLogos";
+import OfferingsSlider from "@/components/OfferingsSlider";
 
 const Home = () => {
   return (
@@ -17,6 +18,12 @@ const Home = () => {
       <HeroIntro />
       <ClientLogos />
       <Container className=" mt-8 flex-col px-10 " tag="main">
+        {/* Robot */}
+        {/* ACT Cards */}
+        {/* Expertise Globe */}
+        {/* Our Offerings Cards */}
+        {/* Results that Matters Cards */}
+        <OfferingsSlider />
         <Subscribe />
       </Container>
       <Footer />

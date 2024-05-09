@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           <div>
             <div className="text-teal-600 dark:text-teal-300">
-              <Link href="/" className=" dark:hidden">
+              <Link href="/" className=" w-fit dark:hidden">
                 <Image
                   src={"/godrejLogo.svg"}
                   alt="Godrej Infotech Logo"
@@ -18,7 +18,7 @@ const Footer = () => {
                   priority={true}
                 />
               </Link>
-              <Link href="/" className=" dark:block">
+              <Link href="/" className=" w-fit dark:block">
                 <Image
                   src={"/godrejLogoWhite.svg"}
                   alt="Godrej Infotech Logo"
@@ -356,7 +356,9 @@ const Footer = () => {
         </div>
 
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          &copy; 2022. Company Name. All rights reserved.
+          Copyright &copy; 2024. Godrej Infotech |{" "}
+          <Link href="#">Disclaimer</Link> |{" "}
+          <Link href="#">Privacy Policy</Link> | <Link href="#">T&C</Link>
         </p>
       </div>
     </footer>
