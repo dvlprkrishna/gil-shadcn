@@ -8,7 +8,6 @@ import Subscribe from "@/components/Subscribe";
 import ClientLogos from "@/components/ClientLogos";
 import OfferingsSlider from "@/components/OfferingsSlider";
 import HubExpertise from "@/components/HubExpertise";
-import CardExpand from "@/components/CardExpand";
 import CardsSection from "@/components/CardsSection";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
