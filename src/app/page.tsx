@@ -8,8 +8,29 @@ import Subscribe from "@/components/Subscribe";
 import ClientLogos from "@/components/ClientLogos";
 import OfferingsSlider from "@/components/OfferingsSlider";
 import HubExpertise from "@/components/HubExpertise";
+import CardExpand from "@/components/CardExpand";
+import CardsSection from "@/components/CardsSection";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
 const Home = () => {
+  const dataArray = [
+    {
+      quote: "lorem",
+      name: "krishna",
+      title: "developer",
+    },
+    {
+      quote: "asdasdas",
+      name: "aas",
+      title: "s2",
+    },
+    {
+      quote: "asdawe24rtrgfvds",
+      name: "asdasd",
+      title: "asfgwu5",
+    },
+  ];
+
   return (
     <>
       {/* <Announcement /> */}
@@ -18,8 +39,13 @@ const Home = () => {
       </Container>
       <HeroIntro />
       <ClientLogos />
+      <CardsSection />
       <HubExpertise />
       <OfferingsSlider />
+
+      <InfiniteMovingCards items={dataArray} />
+
+      {/* <CardExpand /> */}
 
       <Container className=" mt-8 flex-col px-10 " tag="main">
         {/* Robot */}

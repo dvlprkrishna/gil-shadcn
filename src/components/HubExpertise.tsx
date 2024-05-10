@@ -398,7 +398,7 @@ const HubExpertise = () => {
   ];
 
   return (
-    <div className="bg-[rgb(0,98,255)] bg-[linear-gradient(0deg,_rgba(0,98,255,1)_0%,_rgba(0,59,153,1)_100%)]">
+    <div className="bg-[rgb(0,59,153)] bg-[linear-gradient(180deg,_rgba(0,59,153,1)_0%,_rgba(0,98,255,0.5)_47%,_rgba(132,42,203,1)_100%)]">
       <div className="flex flex-row items-center justify-center pt-20 h-screen md:h-auto  relative w-full">
         <div className="  w-full relative overflow-hidden h-full md:h-[40rem] px-4">
           <motion.div
@@ -427,7 +427,7 @@ const HubExpertise = () => {
           </motion.div>
           <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
           <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
-            <World data={sampleArcs} globeConfig={globeConfig} />;
+            <World data={sampleArcs} globeConfig={globeConfig} />
           </div>
         </div>
       </div>
