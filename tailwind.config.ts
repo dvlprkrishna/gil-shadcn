@@ -25,6 +25,7 @@ const config = {
       fontSize: {
         "10xl": "10rem",
       },
+
       letterSpacing: {
         tightest: "-.06em",
       },
