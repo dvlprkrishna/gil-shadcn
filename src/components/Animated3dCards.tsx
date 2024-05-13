@@ -11,7 +11,7 @@ const Animated3dCards: React.FC<Animated3dCardsProps> = ({
 }) => {
   return (
     <div>
-      <div className="wrapper">
+      <div className="wrapper my-8 sm:my-4">
         <div className="card">
           <div className="front">
             <h1>{titleText || "Embrace Tomorrow with Automation"}</h1>

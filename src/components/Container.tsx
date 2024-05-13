@@ -4,12 +4,10 @@ const Container = ({
   children,
   className,
   tag: Tag = "div",
-  map,
 }: {
   children: React.ReactNode;
   className?: string;
   tag?: keyof JSX.IntrinsicElements;
-  map?: any;
 }) => {
   return (
     <Tag
