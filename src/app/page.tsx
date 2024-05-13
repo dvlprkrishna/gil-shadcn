@@ -21,19 +21,22 @@ import Link from "next/link";
 const Home = () => {
   const dataArray = [
     {
-      quote: "lorem",
-      name: "krishna",
-      title: "developer",
+      quote:
+        "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+      name: "IT Director,",
+      title: "Cooling Facility Management Company",
     },
     {
-      quote: "asdasdas",
-      name: "aas",
-      title: "s2",
+      quote:
+        "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+      name: "IT Director,",
+      title: "Cooling Facility Management Company",
     },
     {
-      quote: "asdawe24rtrgfvds",
-      name: "asdasd",
-      title: "asfgwu5",
+      quote:
+        "Godrej Infotech helped us in accelerating digital transformation journey with Business Central on Azure cloud and Power BI solution. As a result, our material requisition efficiency has increased by 66%, time taken in processing purchase orders is reduced by 79% and invoice processing efficiency has improved by 60%.",
+      name: "IT Director,",
+      title: "Cooling Facility Management Company",
     },
   ];
   useEffect(() => {
@@ -106,7 +109,7 @@ const Home = () => {
               <foreignObject x="227" y="224" width="200" height="200">
                 <div className="h-auto w-auto max-w-[200px] m-8">
                   <Image
-                    src="/AutomationRepetitiveTasks.svg"
+                    src="https://i.postimg.cc/5yy9XqGQ/hero-Robot.png"
                     height="200"
                     width="200"
                     layout="responsive"
@@ -195,7 +198,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* robot */}
+      {/* robot hidden */}
       <CardContainer className="dv-circle hidden inter-var dv-custom-border border-black/[0.1] border-[#fff] border-gray">
         <div className="dv-border"></div>
         <CardBody
