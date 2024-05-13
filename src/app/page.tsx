@@ -297,7 +297,7 @@ const Home = () => {
       </CardContainer>
 
       <CardsSection />
-      <HubExpertise />
+      {/* <HubExpertise /> */}
       <OfferingsSlider />
 
       <InfiniteMovingCards items={dataArray} />
