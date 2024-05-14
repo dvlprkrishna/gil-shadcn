@@ -2,7 +2,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import { jetBrains_mono } from "../app/fonts";
 
+import { useRef } from "react";
+import useScrollTriggeredCountUp from "./useScrollTriggeredCountUp";
+import Container from "./Container";
 const World = dynamic(
   () => import("../components/ui/globe").then((m) => m.World),
   {
@@ -396,41 +400,87 @@ const HubExpertise = () => {
       color: colors[Math.floor(Math.random() * (colors.length - 1))],
     },
   ];
+  const ref = useRef<HTMLDivElement>(null);
+  const ref1 = useRef<HTMLDivElement>(null);
+  const ref2 = useRef<HTMLDivElement>(null);
+  const count = useScrollTriggeredCountUp(ref, 25); // 0 to 100 count-up
+  const count1 = useScrollTriggeredCountUp(ref, 500); // 0 to 100 count-up
+  const count2 = useScrollTriggeredCountUp(ref, 15); // 0 to 100 count-up
 
   return (
     <div className="bg-[rgb(0,59,153)] bg-[linear-gradient(180deg,_rgba(0,59,153,1)_0%,_rgba(0,98,255,0.5)_47%,_rgba(132,42,203,1)_100%)]">
-      <div className="flex flex-row items-center justify-center pt-20 h-screen md:h-auto  relative w-full">
-        <div className="  w-full relative overflow-hidden h-full md:h-[40rem] px-4">
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 20,
-            }}
-            animate={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 1,
-            }}
-            className="div"
-          >
-            <div className="text-center mb-8 flex flex-col">
-              <h2 className=" font-semibold text-[60px] leading-[70px] text-[#ffffff] text-center text-2xl mb-2 ">
-                Hub of Expertise
-              </h2>
-              <p className="text-center mx-auto text-[#d4beff] max-w-[50%]  text-xl font-[500] leading-8 ">
-                We are here to build edge and bring technology brilliance with
-                the finest in the industry.
-              </p>{" "}
+      <Container className=" mt-8 flex-col px-10 " tag="main">
+        <div className="flex flex-row items-center justify-center pt-20 h-screen md:h-auto  relative w-full">
+          <div className="  w-full relative overflow-hidden h-full md:h-[100vh] px-4">
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 1,
+              }}
+              className="div"
+            >
+              <div className="text-center mb-8 flex flex-col">
+                <h2 className=" font-semibold text-[60px] leading-[70px] text-[#ffffff] text-center text-2xl mb-2 ">
+                  Hub of Expertise
+                </h2>
+                <p className="text-center mx-auto text-[#d4beff] max-w-[50%]  text-xl font-[500] leading-8 ">
+                  We are here to build edge and bring technology brilliance with
+                  the finest in the industry.
+                </p>{" "}
+              </div>
+            </motion.div>
+            <div className="flex flex-row justify-center sm:gap-x-60 my-10 gap-x-20">
+              <div ref={ref}>
+                <h3
+                  className={`${jetBrains_mono.className} relative text-[72px] leading-[70px] text-[#fff] font-bold `}
+                >
+                  {" "}
+                  {count}{" "}
+                  <span className="absolute -top-2 text-[48px] font-medium leading-[70px]">
+                    +
+                  </span>
+                </h3>
+                <p>Years of Excellence</p>
+              </div>
+              <div ref={ref1}>
+                <h3
+                  className={`${jetBrains_mono.className} relative text-[72px] leading-[70px] text-[#fff] font-bold `}
+                >
+                  {" "}
+                  {count1}{" "}
+                  <span className="absolute -top-2 text-[48px] font-medium leading-[70px]">
+                    +
+                  </span>
+                </h3>
+                <p>Global Reach with Satisfied Customers</p>
+              </div>
+              <div ref={ref2}>
+                <h3
+                  className={`${jetBrains_mono.className} relative text-[72px] leading-[70px] text-[#fff] font-bold `}
+                >
+                  {" "}
+                  {count2}k{" "}
+                  <span className="absolute -top-2 text-[48px] font-medium leading-[70px]">
+                    +
+                  </span>
+                </h3>
+                <p>Man Years of Expertise</p>
+              </div>
             </div>
-          </motion.div>
-          <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-          <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
-            <World data={sampleArcs} globeConfig={globeConfig} />
+            <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+            <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
+              {/* <World data={sampleArcs} globeConfig={globeConfig} />; */}
+            </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

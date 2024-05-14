@@ -17,6 +17,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
+import ResultSection from "@/components/ResultSection";
 
 const Home = () => {
   const dataArray = [
@@ -300,8 +301,12 @@ const Home = () => {
       </CardContainer>
 
       <CardsSection />
-      {/* <HubExpertise /> */}
+
+      <HubExpertise />
+
       <OfferingsSlider />
+
+      <ResultSection />
 
       <InfiniteMovingCards items={dataArray} />
 

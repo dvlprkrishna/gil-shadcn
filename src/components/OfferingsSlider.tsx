@@ -111,37 +111,37 @@ type CardType = {
 
 const cards: CardType[] = [
   {
-    url: "/offerings/1.jpg",
+    url: "/offerings/1.png",
     title: "Title 1",
     id: 1,
   },
   {
-    url: "/offerings/2.jpg",
+    url: "/offerings/2.png",
     title: "Title 2",
     id: 2,
   },
   {
-    url: "/offerings/3.jpg",
+    url: "/offerings/3.png",
     title: "Title 3",
     id: 3,
   },
   {
-    url: "/offerings/4.jpg",
+    url: "/offerings/4.png",
     title: "Title 4",
     id: 4,
   },
   {
-    url: "/offerings/5.jpg",
+    url: "/offerings/5.png",
     title: "Title 5",
     id: 5,
   },
   {
-    url: "/offerings/6.jpg",
+    url: "/offerings/6.png",
     title: "Title 6",
     id: 6,
   },
   {
-    url: "/offerings/7.jpg",
+    url: "/offerings/7.png",
     title: "Title 7",
     id: 7,
   },
