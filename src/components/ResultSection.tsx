@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ResultSection = () => {
@@ -18,88 +19,82 @@ const ResultSection = () => {
       <div className="flex flex-col sm:flex-row items-center justify-center gap-x-16 py-20 h-auto sm:h-screen md:h-auto relative w-full">
         <div className="grid grid-cols-2 grid-rows-2 gap-4">
           <div className="row-span-2">
-            <article className=" rounded-xl h-full bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition  ">
-              <div className="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time
-                  dateTime="2022-10-10"
-                  className="block text-xs text-gray-500"
-                >
-                  {" "}
-                  10th Oct 2022{" "}
-                </time>
-
-                <a href="#">
-                  <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-                    How to center an element using JavaScript and jQuery
-                  </h3>
-                </a>
-
-                <div className="mt-4 flex flex-wrap gap-1">
-                  <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-                    Snippet
-                  </span>
-
-                  <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-                    JavaScript
-                  </span>
+            <article className="flex flex-col rounded-xl bg-gradient-to-r h-full from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition  ">
+              <div className="rounded-[10px] flex flex-col  h-full ">
+                <div
+                  className="w-full h-[60%] rounded-bl-[10px] rounded-tl-[10px]"
+                  style={{
+                    backgroundImage: `url('/results/1.png')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    filter: "brightness(0.8)",
+                  }}
+                ></div>
+                <div className="w-full h-[40%] text-white p-6 rounded-[10px] bg-[#000614]">
+                  <div className="mb-4 flex flex-wrap gap-1">
+                    <span className="whitespace-nowrap sm:text-[16px] sm:leading-[24px] rounded-full bg-[rgb(195,21,169)] bg-[linear-gradient(90deg,_rgba(195,21,169,1)_0%,_rgba(137,40,200,1)_50%,_rgba(83,57,229,1)_100%)] px-8 text-xs py-4 text-[#fff]">
+                      Automation
+                    </span>
+                  </div>
+                  <Link href="#">
+                    <h3 className="mb-10 sm:text-[24px] sm:leading-[30px] text-lg text-left font-medium text-[#fff]">
+                      Revolutionizing TV Audience Measurement
+                    </h3>
+                  </Link>
                 </div>
               </div>
             </article>
           </div>
           <div>
-            <article className=" rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition  ">
-              <div className="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time
-                  dateTime="2022-10-10"
-                  className="block text-xs text-gray-500"
-                >
-                  {" "}
-                  10th Oct 2022{" "}
-                </time>
-
-                <a href="#">
-                  <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-                    How to center an element using JavaScript and jQuery
-                  </h3>
-                </a>
-
-                <div className="mt-4 flex flex-wrap gap-1">
-                  <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-                    Snippet
-                  </span>
-
-                  <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-                    JavaScript
-                  </span>
+            <article className=" rounded-xl bg-gradient-to-r h-full from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition  ">
+              <div className="rounded-[10px] flex bg-white h-full ">
+                <div
+                  className="w-1/2 rounded-bl-[10px] rounded-tl-[10px]"
+                  style={{
+                    backgroundImage: `url('/results/2.png')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    filter: "brightness(0.8)",
+                  }}
+                ></div>
+                <div className="w-1/2 text-white p-6 rounded-[10px] bg-[#000614]">
+                  <div className="mb-4 flex flex-wrap gap-1">
+                    <span className="whitespace-nowrap sm:text-[16px] sm:leading-[24px] rounded-full bg-[rgb(195,21,169)] bg-[linear-gradient(90deg,_rgba(195,21,169,1)_0%,_rgba(137,40,200,1)_50%,_rgba(83,57,229,1)_100%)] px-8 text-xs py-4 text-[#fff]">
+                      Cloud
+                    </span>
+                  </div>
+                  <Link href="#">
+                    <h3 className="mb-10 sm:text-[24px] sm:leading-[30px] text-lg text-left font-medium text-[#fff]">
+                      Prominent American Watch Brand Thrives ure Migration
+                    </h3>
+                  </Link>
                 </div>
               </div>
             </article>
           </div>
           <div className="col-start-2">
-            <article className=" rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition  ">
-              <div className="rounded-[10px] bg-white p-4 !pt-20 sm:p-6">
-                <time
-                  dateTime="2022-10-10"
-                  className="block text-xs text-gray-500"
-                >
-                  {" "}
-                  10th Oct 2022{" "}
-                </time>
-
-                <a href="#">
-                  <h3 className="mt-0.5 text-lg font-medium text-gray-900">
-                    How to center an element using JavaScript and jQuery
-                  </h3>
-                </a>
-
-                <div className="mt-4 flex flex-wrap gap-1">
-                  <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-                    Snippet
-                  </span>
-
-                  <span className="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
-                    JavaScript
-                  </span>
+            <article className=" rounded-xl bg-gradient-to-r h-full from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition  ">
+              <div className="rounded-[10px] flex bg-white h-full ">
+                <div
+                  className="w-1/2 rounded-bl-[10px] rounded-tl-[10px]"
+                  style={{
+                    backgroundImage: `url('/results/3.png')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    filter: "brightness(0.8)",
+                  }}
+                ></div>
+                <div className="w-1/2 text-white p-6 rounded-[10px] bg-[#000614]">
+                  <div className="mb-4 flex flex-wrap gap-1">
+                    <span className="whitespace-nowrap sm:text-[16px] sm:leading-[24px] rounded-full bg-[rgb(195,21,169)] bg-[linear-gradient(90deg,_rgba(195,21,169,1)_0%,_rgba(137,40,200,1)_50%,_rgba(83,57,229,1)_100%)] px-8 text-xs py-4 text-[#fff]">
+                      Transformation
+                    </span>
+                  </div>
+                  <Link href="#">
+                    <h3 className="mb-10 sm:text-[24px] sm:leading-[30px] text-lg text-left font-medium text-[#fff]">
+                      Prominent American Watch Brand Thrives ure Migration
+                    </h3>
+                  </Link>
                 </div>
               </div>
             </article>

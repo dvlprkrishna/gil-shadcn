@@ -18,6 +18,7 @@ import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import ResultSection from "@/components/ResultSection";
+import OverlayCard from "@/components/OverlayCard";
 
 const Home = () => {
   const dataArray = [
@@ -305,14 +306,16 @@ const Home = () => {
       <HubExpertise />
 
       <OfferingsSlider />
-
-      <ResultSection />
+      <Container className=" mt-8 flex-col px-10 " tag="section">
+        <ResultSection />
+      </Container>
 
       <InfiniteMovingCards items={dataArray} />
 
       {/* <CardExpand /> */}
 
-      <Container className=" mt-8 flex-col px-10 " tag="main">
+      <Container className=" mt-8 flex-col px-10 " tag="section">
+        {/* Add more instances of the Card component as needed */}
         {/* Robot */}
         {/* ACT Cards */}
         {/* Expertise Globe */}
