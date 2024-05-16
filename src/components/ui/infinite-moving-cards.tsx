@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import Container from "../Container";
 
 export const InfiniteMovingCards = ({
   items,
@@ -71,52 +72,62 @@ export const InfiniteMovingCards = ({
     }
   };
   return (
-    <div
-      ref={containerRef}
-      className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
-      )}
-    >
-      <ul
-        ref={scrollerRef}
+    <>
+      <Container className=" mt-8 flex-col px-10 " tag="section">
+        <div className="flex flex-col pt-10 items-start justify-start">
+          <h2 className=" font-semibold text-[60px] leading-[70px] text-[#fff] text-left text-2xl mb-2 ">
+            What Experts Think <br /> About Us
+          </h2>
+          <p className="text-left text-[#fff] max-w-[50%]  text-xl font-[500] leading-8 ">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>{" "}
+        </div>
+      </Container>
+
+      <div
+        ref={containerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-x-12 gap-y-4 py-16 w-max flex-nowrap",
-          start && "animate-scroll ",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] ",
+          className
         )}
       >
-        {items.map((item, idx) => (
-          <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
-            style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-            }}
-            key={item.name}
-          >
-            <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.name}
-                  </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
-                  </span>
+        <ul
+          ref={scrollerRef}
+          className={cn(
+            " flex min-w-full shrink-0 gap-x-12 gap-y-4 py-16 w-max flex-nowrap ",
+            start && "animate-scroll ",
+            pauseOnHover && "hover:[animation-play-state:paused]"
+          )}
+        >
+          {items.map((item, idx) => (
+            <li
+              className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px] bg-[rgb(195,21,169)] bg-[linear-gradient(90deg,_rgba(195,21,169,0.4)_0%,_rgba(137,40,200,0.1)_50%,_rgba(83,57,229,0.4)_100%)] bg-black"
+              key={item.name}
+            >
+              <blockquote>
+                <div
+                  aria-hidden="true"
+                  className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                ></div>
+                <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
+                  {item.quote}
                 </span>
-              </div>
-            </blockquote>
-          </li>
-        ))}
-      </ul>
-    </div>
+                <div className="relative z-20 mt-6 flex flex-row items-center">
+                  <span className="flex flex-col gap-1">
+                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                      {item.name}
+                    </span>
+                    <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                      {item.title}
+                    </span>
+                  </span>
+                </div>
+              </blockquote>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };
