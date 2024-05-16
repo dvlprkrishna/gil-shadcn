@@ -519,7 +519,7 @@ h3 {
 }
 
 .wrapper .front {
-  border: 2px solid white;
+  /* border: 2px solid white; */
   background-image: linear-gradient(
     90deg,
     #c315a9 0%,
