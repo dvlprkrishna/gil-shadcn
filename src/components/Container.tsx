@@ -1,18 +1,23 @@
 import React from "react";
 
-interface ContainerProps {
-  children: React.ReactNode;
-  className?: string;
-  map?: any;
-  tag?: keyof JSX.IntrinsicElements;
-}
-
-const Animated3dCards: React.FC<ContainerProps> = ({
+const Container = ({
   children,
   className,
-  map,
   tag: Tag = "div",
+}: {
+  children: React.ReactNode;
+  className?: string;
+  tag?: keyof JSX.IntrinsicElements;
 }) => {
+  // width: 100%;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  //   padding-right: 2rem;
+  //   padding-left: 2rem;
+  //   margin: auto;
+  //   text-align: center;
+  //   justify-content: center;
+  //   display: flex;
   return (
     <Tag
       className={`container mx-auto px-8 text-center flex justify-center ${className}`}
@@ -22,4 +27,4 @@ const Animated3dCards: React.FC<ContainerProps> = ({
   );
 };
 
-export default Animated3dCards;
+export default Container;
