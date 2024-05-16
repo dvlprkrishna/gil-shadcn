@@ -67,7 +67,6 @@ const Home = () => {
       </Container>
       <HeroIntro />
       <ClientLogos />
-
       {/* robo */}
       <div>
         <div className="  h-screen">
@@ -199,7 +198,6 @@ const Home = () => {
           <button id="rerun-button" className="hidden"></button>
         </div>
       </div>
-
       {/* robot hidden */}
       <CardContainer className="dv-circle hidden inter-var dv-custom-border border-black/[0.1] border-[#fff] border-gray">
         <div className="dv-border"></div>
@@ -300,27 +298,14 @@ const Home = () => {
           </div>
         </CardBody>
       </CardContainer>
-
       <CardsSection />
-
       <HubExpertise />
-
       <OfferingsSlider />
       <Container className=" mt-8 flex-col px-10 " tag="section">
         <ResultSection />
       </Container>
-
       <InfiniteMovingCards items={dataArray} />
-
-      {/* <CardExpand /> */}
-
       <Container className=" mt-8 flex-col px-10 " tag="section">
-        {/* Add more instances of the Card component as needed */}
-        {/* Robot */}
-        {/* ACT Cards */}
-        {/* Expertise Globe */}
-        {/* Our Offerings Cards */}
-        {/* Results that Matters Cards */}
         <Subscribe />
       </Container>
       <Footer />

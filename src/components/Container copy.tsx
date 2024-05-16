@@ -1,17 +1,13 @@
 import React from "react";
 
-interface ContainerProps {
-  children: React.ReactNode;
-  className?: string;
-  map?: any;
-  tag?: keyof JSX.IntrinsicElements;
-}
-
-const Animated3dCards: React.FC<ContainerProps> = ({
+const Container = ({
   children,
   className,
-  map,
   tag: Tag = "div",
+}: {
+  children: React.ReactNode;
+  className?: string;
+  tag?: keyof JSX.IntrinsicElements;
 }) => {
   return (
     <Tag
@@ -22,4 +18,4 @@ const Animated3dCards: React.FC<ContainerProps> = ({
   );
 };
 
-export default Animated3dCards;
+export default Container;
